@@ -41,7 +41,6 @@ let currentNo = 0;
 document.querySelector(".front").addEventListener("click",function(){
 
   if(count===0){
-    console.log("jj");
     let a = document.querySelector(".bg-Img");
     if(window.getComputedStyle(a.children[0]).visibility==="visible"){
       url = window.getComputedStyle(a.children[0]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
@@ -55,7 +54,6 @@ document.querySelector(".front").addEventListener("click",function(){
     count=1;
   }
   if(url === "images/img-2.jpg"){
-    console.log("pp");
     b.src = "images/img-1.jpg";
     b.classList.add("js-for-background-img-at-level2");
     heading.classList.add("js-stop-heading-animation");
