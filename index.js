@@ -43,19 +43,13 @@ document.querySelector(".front").addEventListener("click",function(){
   if(count===0){
     let a = document.querySelector(".bg-Img");
     if(window.getComputedStyle(a.children[0]).visibility==="visible"){
-      console.log(window.getComputedStyle(a.children[0]).backgroundImage);
-      url = window.getComputedStyle(a.children[0]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
-      console.log("url");
+      url = window.getComputedStyle(a.children[0]).backgroundImage.split("cloned-website/").pop().slice(0,-2);
     }
     else if(window.getComputedStyle(a.children[1]).visibility==="visible"){
-      console.log(window.getComputedStyle(a.children[1]).backgroundImage);
-      url = window.getComputedStyle(a.children[1]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
-      console.log("url");
+      url = window.getComputedStyle(a.children[1]).backgroundImage.split("cloned-website/").pop().slice(0,-2);
     }
     else if(window.getComputedStyle(a.children[2]).visibility==="visible"){
-      console.log(window.getComputedStyle(a.children[2]).backgroundImage);
-      url = window.getComputedStyle(a.children[2]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
-      console.log("url");
+      url = window.getComputedStyle(a.children[2]).backgroundImage.split("cloned-website/").pop().slice(0,-2);
     }
     count=1;
   }
@@ -215,13 +209,13 @@ document.querySelector(".back").addEventListener("click",function(){
   if(count===0){
     let a = document.querySelector(".bg-Img");
     if(window.getComputedStyle(a.children[0]).visibility==="visible"){
-      url = window.getComputedStyle(a.children[0]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
+      url = window.getComputedStyle(a.children[0]).backgroundImage.split("cloned-website/").pop().slice(0,-2);
     }
     else if(window.getComputedStyle(a.children[1]).visibility==="visible"){
-      url = window.getComputedStyle(a.children[1]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
+      url = window.getComputedStyle(a.children[1]).backgroundImage.split("cloned-website/").pop().slice(0,-2);
     }
     else if(window.getComputedStyle(a.children[2]).visibility==="visible"){
-      url = window.getComputedStyle(a.children[2]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
+      url = window.getComputedStyle(a.children[2]).backgroundImage.split("cloned-website/").pop().slice(0,-2);
     }
     count=1;
   }
@@ -1572,7 +1566,6 @@ let imgTwo = document.querySelector(".level6-img2");
 
 let observer1 = new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
-    console.log(entry.isIntersecting);
     entry.target.classList.toggle("js-level6-img1",entry.isIntersecting);
   })
 }, {threshold: 0.2});
@@ -1580,7 +1573,6 @@ observer1.observe(imgOne);
 
 let observer2 = new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
-    console.log(entry.isIntersecting);
     entry.target.classList.toggle("js-level6-img2",entry.isIntersecting);
   })
 }, {threshold: 0.2});
