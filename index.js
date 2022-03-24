@@ -44,12 +44,15 @@ document.querySelector(".front").addEventListener("click",function(){
     let a = document.querySelector(".bg-Img");
     if(window.getComputedStyle(a.children[0]).visibility==="visible"){
       url = window.getComputedStyle(a.children[0]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
+      console.log("url");
     }
     else if(window.getComputedStyle(a.children[1]).visibility==="visible"){
       url = window.getComputedStyle(a.children[1]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
+      console.log("url");
     }
     else if(window.getComputedStyle(a.children[2]).visibility==="visible"){
       url = window.getComputedStyle(a.children[2]).backgroundImage.split("PracticeProject6/").pop().slice(0,-2);
+      console.log("url");
     }
     count=1;
   }
